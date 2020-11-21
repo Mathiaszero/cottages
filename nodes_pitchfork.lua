@@ -54,7 +54,7 @@ minetest.register_tool("cottages:pitchfork", {
 		-- did the placing succeed?
 		local nnode = minetest.get_node(pos)
 		if( not(nnode) or not(nnode.name) or nnode.name ~= "cottages:pitchfork_placed") then
-			return nil
+			--return nil
 		end
 		local meta = minetest.get_meta(pos)
 		meta:set_int( "wear", itemstack:get_wear())
